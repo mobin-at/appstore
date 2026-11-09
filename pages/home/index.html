@@ -11,31 +11,6 @@
 </head>
 <body>
   <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
-  <details class="theme-lab" open>
-    <summary>آزمایش رنگ و شفافیت <span>مخصوص پیش‌نمایش</span></summary>
-    <div class="theme-lab-body">
-      <label for="theme-target">کدام بخش را تغییر می‌دهی؟</label>
-      <select id="theme-target">
-        <option value="surface">بخش‌های رنگی و کادر جست‌وجو</option>
-        <option value="onSurface">نوشته‌های داخل بخش‌های رنگی</option>
-        <option value="background">زمینهٔ اصلی صفحه</option>
-        <option value="text">نوشته‌های اصلی</option>
-        <option value="muted">توضیحات و نوشته‌های فرعی</option>
-        <option value="buttons">زمینهٔ همبرگر، لوگو و جست‌وجو</option>
-        <option value="buttonText">خطوط همبرگر، نوشتهٔ لوگو و آیکون جست‌وجو</option>
-        <option value="primary">امتیازها و دکمه‌های اصلی</option>
-        <option value="line">خطوط و حاشیه‌ها</option>
-        <option value="heroShade">سایهٔ روی بنر هیرو</option>
-      </select>
-      <label class="theme-link-label"><input id="theme-link-header" type="checkbox" checked> هدر هم همراه بخش‌ها تغییر کند</label>
-      <div class="theme-lab-color-row"><label for="theme-color">رنگ</label><input id="theme-color" type="color" value="#111111"><input id="theme-hex" type="text" value="#111111" aria-label="کد رنگ" dir="ltr" maxlength="7" spellcheck="false" pattern="#[0-9a-fA-F]{6}"></div>
-      <div class="theme-lab-opacity-row"><label for="theme-opacity">Opacity</label><input id="theme-opacity" type="range" min="0" max="100" value="100"><output id="theme-opacity-value" for="theme-opacity">۱۰۰٪</output></div>
-      <p class="theme-lab-hint">شفافیت فقط روی رنگ بخش انتخابی اعمال می‌شود؛ متن و تصویر محو نمی‌شوند. تغییرات در همین مرورگر ذخیره می‌شوند.</p>
-      <div class="theme-lab-actions"><button type="button" id="theme-reset">بازنشانی همه</button><button type="button" id="theme-export">نمایش تنظیمات برای ارسال</button></div>
-      <textarea id="theme-settings" aria-label="تنظیمات رنگ؛ برای ارسال کپی کن" dir="ltr" readonly hidden></textarea>
-      <p id="theme-status" class="theme-lab-status" role="status"></p>
-    </div>
-  </details>
   <div class="header-shell">
   <header class="header">
     <button class="icon-button menu-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="main-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg></button>
@@ -170,6 +145,5 @@
   </dialog>
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/hero.js"></script>
-  <script src="../../assets/js/theme-lab.js"></script>
 </body>
 </html>
