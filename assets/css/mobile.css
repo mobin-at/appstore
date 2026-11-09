@@ -120,3 +120,10 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 @media (max-width: 350px) { .hero-content { inset-inline: 16px; } .hero .game-heading h2 { font-size: 17px; } .hero .rating { padding: 4px 6px; } }
 @media (min-width: 600px) { .hero-slide { height: 380px; } .hero-content { inset-inline: 36px; bottom: 54px; max-width: 530px; } .hero .game-heading h2 { font-size: 25px; } .hero-content p { font-size: 14px; } .hero-arrow { top: 40%; } }
 @media (prefers-reduced-motion: reduce) { .hero-track, .hero-dot::after { transition: none; } }
+
+/* Header brand and light version of the reference menu button. */
+.menu-button { border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--primary); }
+.menu-button svg { width: 26px; height: 26px; stroke-width: 1.3; }
+.brand-logo { display: flex; align-items: center; min-width: 0; flex-shrink: 1; min-height: 44px; }
+.brand-logo img { display: block; width: 150px; height: auto; max-width: 100%; }
+@media (max-width: 350px) { .header { gap: 7px; padding-inline: 10px; } .brand-logo img { width: 128px; } .header-actions { gap: 0; } }
