@@ -129,8 +129,8 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .menu-button { border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--primary); }
 .menu-button svg { width: 26px; height: 26px; stroke-width: 1.3; }
 .brand-logo { display: flex; align-items: center; min-width: 0; flex-shrink: 1; min-height: 44px; }
-.brand-logo img { display: block; width: 150px; height: auto; max-width: 100%; }
-@media (max-width: 350px) { .header { gap: 7px; padding-inline: 10px; } .brand-logo img { width: 128px; } .header-actions { gap: 0; } }
+.brand-logo img, .brand-logo .brand-mark { display: block; width: 150px; height: auto; max-width: 100%; }
+@media (max-width: 350px) { .header { gap: 7px; padding-inline: 10px; } .brand-logo img, .brand-logo .brand-mark { width: 128px; } .header-actions { gap: 0; } }
 /* Solid black header controls, with white icons. */
 .header .menu-button,
 .header .search-button,
@@ -164,3 +164,5 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .theme-lab textarea { width: 100%; height: 180px; margin-top: 12px; color: #111; background: #fff; border: 1px solid #111; border-radius: 7px; padding: 10px; font: 12px monospace; }
 .theme-lab-status { margin: 8px 0 0; font-size: 11px; line-height: 20px; }
 .theme-lab :focus-visible { outline: 2px solid #111; outline-offset: 3px; }
+
+.brand-logo .brand-mark { height: auto; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; }
