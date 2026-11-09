@@ -34,7 +34,7 @@ export default {
     if (!asset) return new Response('Not found', { status: 404 });
     const body = Uint8Array.from(atob(asset[1]), char => char.charCodeAt(0));
     return new Response(request.method === 'HEAD' ? null : body, {
-      headers: { 'Content-Type': asset[0], 'Cache-Control': 'no-cache', 'X-Appstore-Version': 'fa-header-7' }
+      headers: { 'Content-Type': asset[0], 'Cache-Control': 'no-cache', 'X-Appstore-Version': 'fa-header-8' }
     });
   }
 };

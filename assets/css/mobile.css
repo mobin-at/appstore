@@ -127,3 +127,11 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .brand-logo { display: flex; align-items: center; min-width: 0; flex-shrink: 1; min-height: 44px; }
 .brand-logo img { display: block; width: 150px; height: auto; max-width: 100%; }
 @media (max-width: 350px) { .header { gap: 7px; padding-inline: 10px; } .brand-logo img { width: 128px; } .header-actions { gap: 0; } }
+/* Solid black header controls, with white icons. */
+.header .menu-button,
+.header .search-button,
+.header .account-button { background: #111; color: #fff; border-color: #111; }
+.header .account-button .face-body { fill: #fff; stroke: #fff; }
+.header .account-button .face-feature,
+.header .account-button .face-cheek { fill: #111; }
+.header .account-button .face-smile { stroke: #111; }
