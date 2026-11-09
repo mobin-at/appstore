@@ -17,10 +17,13 @@
   --primary: #171717;
   --accent: #171717;
   --line: #111;
+  --header-button: #111;
+  --header-icon: #fff;
+  --hero-shade: #000;
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 80px; }
-body { margin: 0; padding-bottom: calc(76px + env(safe-area-inset-bottom)); background: var(--background); }
+body { color: var(--text); margin: 0; padding-bottom: calc(76px + env(safe-area-inset-bottom)); background: var(--background); }
 button, input { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 button { cursor: pointer; }
@@ -96,7 +99,7 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .hero-track { display: flex; direction: ltr; transition: transform .55s cubic-bezier(.22,.61,.36,1); }
 .hero-slide { flex: 0 0 100%; min-width: 0; height: 340px; position: relative; direction: rtl; overflow: hidden; }
 .hero-slide > img { position: absolute; width: 100%; height: 100%; inset: 0; object-fit: cover; user-select: none; pointer-events: none; }
-.hero-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #00000008 8%, #00000020 28%, #000000c9 59%, #000000ed 100%); }
+.hero-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--hero-shade) 3%, transparent) 8%, color-mix(in srgb, var(--hero-shade) 13%, transparent) 28%, color-mix(in srgb, var(--hero-shade) 79%, transparent) 59%, color-mix(in srgb, var(--hero-shade) 93%, transparent) 100%); }
 .hero-content { position: absolute; z-index: 1; inset-inline: 22px; bottom: 48px; text-shadow: 0 1px 8px #0008; }
 .hero-label { display: inline-block; border: 1px solid #ffffff40; border-radius: 6px; padding: 2px 8px; background: #0006; font-size: 10px; color: #fff; }
 .hero .game-heading { align-items: center; margin-top: 8px; }
@@ -131,7 +134,7 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 /* Solid black header controls, with white icons. */
 .header .menu-button,
 .header .search-button,
-.header .account-button { background: #111; color: #fff; border-color: #111; }
+.header .account-button { background: var(--header-button); color: var(--header-icon); border-color: var(--header-button); }
 .header .account-button .face-body { fill: #fff; stroke: #fff; }
 .header .account-button .face-feature,
 .header .account-button .face-cheek { fill: #111; }
@@ -141,3 +144,23 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .account-avatar { display: block; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
 
 .search-panel input::placeholder { color: #fff; opacity: .8; }
+
+.header-shell { position: relative; }
+/* The test panel has its own fixed palette so every color remains editable. */
+.theme-lab { margin: 10px 12px; border: 1px solid #111; border-radius: 14px; background: #fff; color: #111; font-size: 12px; }
+.theme-lab summary { cursor: pointer; padding: 13px 12px; min-height: 44px; font-weight: 700; }
+.theme-lab summary span { font-size: 10px; font-weight: 400; margin-inline-start: 8px; }
+.theme-lab-body { padding: 0 12px 12px; }
+.theme-lab select { width: 100%; margin: 6px 0 12px; padding: 10px; border: 1px solid #111; border-radius: 9px; color: #111; background: #fff; font: inherit; }
+.theme-lab-color-row, .theme-lab-opacity-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.theme-lab label { flex-shrink: 0; }
+.theme-lab input[type=color] { width: 48px; height: 40px; border: 1px solid #111; border-radius: 7px; padding: 3px; background: #fff; }
+.theme-lab input[type=text] { width: 100px; min-width: 0; padding: 9px; border: 1px solid #111; border-radius: 7px; font: 13px monospace; background: #fff; color: #111; }
+.theme-lab input[type=range] { flex: 1; min-width: 0; accent-color: #111; direction: ltr; height: 32px; }
+.theme-lab output { min-width: 38px; }
+.theme-lab-hint { line-height: 22px; font-size: 11px; margin: 6px 0 12px; }
+.theme-lab-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.theme-lab-actions button { min-height: 40px; border: 1px solid #111; border-radius: 8px; padding: 6px 10px; background: #111; color: #fff; font-size: 11px; }
+.theme-lab textarea { width: 100%; height: 180px; margin-top: 12px; color: #111; background: #fff; border: 1px solid #111; border-radius: 7px; padding: 10px; font: 12px monospace; }
+.theme-lab-status { margin: 8px 0 0; font-size: 11px; line-height: 20px; }
+.theme-lab :focus-visible { outline: 2px solid #111; outline-offset: 3px; }
