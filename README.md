@@ -1,12 +1,44 @@
-# Appstore
+# Appstore — رابط استور اندرویدی
 
-A mobile-first TapTap-inspired page using plain HTML and CSS, with a small JavaScript file for the menu, local search, appearance toggle and preview dialog.
+پروژهٔ HTML و CSS برای طراحی یک استور اپلیکیشن اندروید با تمرکز بر کاربران ایرانی. فایل‌ها مستقل از فریم‌ورک هستند تا بعداً در اپ یا WebView قابل استفاده باشند.
 
-Open `index.html` directly, or serve this folder with `python3 -m http.server 8000`.
+## اجرا
 
-- `index.html`: page content and game cards
-- `styles.css`: layout, colors and responsive rules
-- `app.js`: optional interface interactions
-- `assets/`: locally stored reference game artwork
+از ریشهٔ پروژه اجرا کنید:
 
-Reference: https://www.taptap.io/ . TapTap branding and game artwork belong to their respective owners and are used here as reference content for the initial design. This is a static interface; account, downloads, rankings and categories are not backed by a service. Category links currently lead to the corresponding page sections.
+```sh
+python3 -m http.server 8000
+```
+
+سپس `http://localhost:8000` را باز کنید. برای مشاهدهٔ مستقیم نیز می‌توانید `pages/home/index.html` را باز کنید.
+
+## ساختار
+
+```text
+index.html                 ورودی و انتقال به صفحهٔ اصلی
+pages/
+  home/index.html          صفحهٔ اصلی فعلی
+assets/
+  css/mobile.css           استایل مشترک و واکنش‌گرا
+  js/main.js               تعامل‌های سبک رابط
+  images/games/            تصاویر نمونهٔ بازی‌ها
+docs/
+  architecture.md          قرارداد پوشه‌ها و مسیر صفحه‌های آینده
+.openai/hosting.json        تنظیمات پیش‌نمایش میزبانی‌شده
+```
+
+## وضعیت
+
+صفحهٔ اصلی فعلی نمونهٔ اولیه با مرجع TapTap است و هنوز محتوای انگلیسی دارد. مسیر محصول، طراحی فارسی و راست‌به‌چپ برای استور اپلیکیشن اندروید ایرانی است. تبدیل ظاهر و محتوای نمونه در مرحلهٔ طراحی بعدی انجام می‌شود.
+
+منو، جست‌وجوی محلی و تغییر ظاهر برای نمونه کار می‌کنند. سرویس دانلود، ورود و رتبه‌بندی واقعی هنوز پیاده‌سازی نشده‌اند. تصاویر و نشان TapTap متعلق به صاحبانشان هستند و محتوای مرجع اولیه‌اند؛ پیش از انتشار محصول باید جایگزین شوند.
+
+## پیش‌نمایش Sites
+
+خروجی میزبانی در `dist/` ساخته می‌شود و در گیت نگهداری نمی‌شود. برای تولید آن:
+
+```sh
+mkdir -p dist
+cp index.html dist/
+cp -r pages assets dist/
+```
