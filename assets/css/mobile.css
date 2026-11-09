@@ -135,3 +135,6 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .header .account-button .face-feature,
 .header .account-button .face-cheek { fill: #111; }
 .header .account-button .face-smile { stroke: #111; }
+
+.header .account-button { padding: 2px; overflow: hidden; }
+.account-avatar { display: block; width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
