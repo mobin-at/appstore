@@ -172,3 +172,33 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 /* Green score numbers in game listings; hero scores keep their white styling. */
 .feed-card .rating bdi { color: #087d45; }
 .dark .feed-card .rating bdi { color: #56dfa0; }
+/* Editorial section headings replace the full-width filled title bars. */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--text);
+  padding: 22px 18px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.section-title::before {
+  content: '';
+  flex: 0 0 4px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--primary);
+}
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  min-width: 16px;
+  margin-inline-start: 4px;
+  background: color-mix(in srgb, var(--text) 14%, transparent);
+}
+@media (max-width: 350px) {
+  .section-title { font-size: 14px; gap: 8px; }
+}
