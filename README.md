@@ -38,9 +38,7 @@ docs/
 خروجی میزبانی در `dist/` ساخته می‌شود و در گیت نگهداری نمی‌شود. برای تولید آن:
 
 ```sh
-mkdir -p dist
-cp index.html dist/
-cp -r pages assets dist/
+python3 scripts/build-static.py
 ```
 
 فونت وزیرمتن همراه مجوز SIL OFL در `assets/fonts/` نگهداری می‌شود. جست‌وجو از عنوان فارسی، انگلیسی و ژانر بازی‌ها پشتیبانی می‌کند.
