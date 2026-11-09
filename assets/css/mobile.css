@@ -1,12 +1,40 @@
 @font-face {
-  font-family: Vazirmatn;
-  src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-family: IRANSansMobile;
+  src: url('../fonts/IRANSansMobileFaNum-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: IRANSansMobile;
+  src: url('../fonts/IRANSansMobileFaNum-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANSansMobile;
+  src: url('../fonts/IRANSansMobileFaNum-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANSansMobile;
+  src: url('../fonts/IRANSansMobileFaNum-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: IRANSansMobile;
+  src: url('../fonts/IRANSansMobileFaNum-UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  font-family: Vazirmatn, Tahoma, sans-serif;
+  font-family: IRANSansMobile, Tahoma, sans-serif;
   color: #111;
   background: #fff;
   --surface: #111;
