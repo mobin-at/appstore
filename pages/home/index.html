@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#11111b">
   <meta name="description" content="اپ‌استور؛ کشف بازی‌ها و برنامه‌های اندروید، به زبان فارسی.">
   <title>اپ‌استور | بازی‌ها و برنامه‌های اندروید</title>
   <link rel="preload" href="../../assets/fonts/IRANSansMobileFaNum-Regular.ttf" as="font" type="font/ttf" crossorigin>
@@ -13,8 +13,8 @@
   <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
   <div class="header-shell">
   <header class="header">
-    <button class="icon-button menu-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="main-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg></button>
-    <a class="brand-logo" href="./" aria-label="خانهٔ کاتینگ اج"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 70" class="brand-mark" role="img" aria-labelledby="header-brand-title"><title id="header-brand-title">CUTTING EDGE</title><rect width="100%" height="100%" rx="3" fill="var(--header-button)"/><g transform="translate(12 10)" fill="none" stroke="var(--header-icon)" stroke-width="5.5" stroke-linejoin="miter"><path d="M15 3H3V47H15" transform="translate(0 0)"/><path d="M3 3V47H15V3" transform="translate(22 0)"/><path d="M0 3H18M9 3V47" transform="translate(44 0)"/><path d="M0 3H18M9 3V47" transform="translate(66 0)"/><path d="M3 3H15M9 3V47M3 47H15" transform="translate(88 0)"/><path d="M3 47V3H7L15 47V3" transform="translate(110 0)"/><path d="M15 12V3H3V47H15V27H10" transform="translate(132 0)"/><path d="M15 3H3V47H15M3 24H13" transform="translate(164 0)"/><path d="M3 3H12L16 8V42L12 47H3Z" transform="translate(186 0)"/><path d="M15 12V3H3V47H15V27H10" transform="translate(208 0)"/><path d="M15 3H3V47H15M3 24H13" transform="translate(230 0)"/></g><path d="M9 37H260" stroke="var(--header-button)" stroke-width="2"/></svg></a>
+    <button class="icon-button menu-button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="main-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg></button>
+    <a class="brand-logo" href="./" aria-label="خانهٔ کاتینگ اج"><span class="wordmark" lang="en" dir="ltr">CUTTING <em>EDGE</em></span></a>
     <div class="header-actions">
       <button class="search-button icon-button" aria-label="باز کردن جست‌وجو" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg></button>
       <button class="account-button icon-button" aria-label="حساب کاربری" data-account><img class="account-avatar" src="../../assets/images/avatars/arthur-morgan.png" alt="" width="40" height="40"></button>
@@ -34,7 +34,7 @@
     <button type="button" class="cancel-search">انصراف</button>
   </form>
   <nav class="categories" id="categories" aria-label="دسته‌بندی بازی‌ها">
-    <a href="#trending">دسته‌بندی‌ها</a><a href="#trending">برترین‌ها</a><a href="#trending">تازه‌ها</a><a href="#featured">پیشنهاد ویژه</a>
+    <a href="#trending"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6h10c3 0 6 12 3 13-2 1-4-4-5-4H9c-1 0-3 5-5 4C1 18 4 6 7 6Z"/><path d="M6 10h5m-2.5-2.5v5m6-2.5h.1m3 2h.1"/></svg>دسته‌بندی‌ها</a><a href="#trending"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v7a5 5 0 0 1-10 0zM7 5H3v3a4 4 0 0 0 4 4m10-7h4v3a4 4 0 0 1-4 4M12 15v6m-4 0h8"/></svg>برترین‌ها</a><a href="#trending"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>تازه‌ها</a><a class="selected" href="#featured"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></svg>پیشنهاد ویژه</a>
   </nav>
   <main id="main">
     <section id="featured" aria-labelledby="featured-title">
@@ -42,36 +42,36 @@
       <div class="hero" role="region" aria-roledescription="اسلایدر" aria-label="پیشنهادهای ویژه">
         <div class="hero-viewport">
           <div class="hero-track">
-<article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="1 از 5" data-name="monster hunter rise netflix مانستر هانتر رایز" data-tags="اکشن · نقش‌آفرینی">
-          <img src="../../assets/images/games/game-0.jpg" alt="مانستر هانتر رایز" width="720" height="405">
-          <div class="hero-content"><span class="hero-label">پیشنهاد ویژه</span><div class="game-heading"><h2>مانستر هانتر رایز</h2><span class="rating" aria-label="امتیاز ۸٫۳"><small>امتیاز</small><bdi>۸٫۳</bdi></span></div>
-          <div class="original-name" lang="en" dir="ltr">MONSTER HUNTER RISE NETFLIX</div>
-          <p>شکار هیولاها، این بار در موبایل؛ یک ماجراجویی هیجان‌انگیز در دنیای مانستر هانتر.</p>
-        </div></article>
+<article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="1 از 5" data-name="blade mirrors of the highlands بلید: آینه‌های مرتفع" data-tags="اکشن · نقش‌آفرینی">
+          <img src="../../assets/images/showcase/crimson-blade.png" alt="بلید: آینه‌های مرتفع" width="720" height="405">
+          <div class="hero-content"><span class="hero-label"><span aria-hidden="true">♛</span> پیشنهاد ویژه</span><div class="game-heading"><h2>بلید: آینه‌های مرتفع</h2><span class="rating" aria-label="امتیاز ۷٫۸"><small>امتیاز</small><bdi>۷٫۸</bdi></span></div>
+          <div class="original-name" lang="en" dir="ltr">BLADE: MIRRORS OF THE HIGHLANDS</div>
+          <p>یک نقش‌آفرینی اکشن حماسی در جهانی پر از راز، شرافت و انتخاب‌های دشوار.</p>
+        <div class="genre-chips"><span>اکشن</span><span>نقش‌آفرینی</span></div></div></article>
 <article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="2 از 5" aria-hidden="true" data-name="red dead redemption netflix رد دد ردمپشن" data-tags="ماجراجویی · جهان‌باز">
           <img src="../../assets/images/games/game-1.jpg" alt="رد دد ردمپشن" width="720" height="405" loading="lazy">
-          <div class="hero-content"><span class="hero-label">پیشنهاد ویژه</span><div class="game-heading"><h2>رد دد ردمپشن</h2><span class="rating" aria-label="امتیاز ۸٫۶"><small>امتیاز</small><bdi>۸٫۶</bdi></span></div>
+          <div class="hero-content"><span class="hero-label"><span aria-hidden="true">♛</span> پیشنهاد ویژه</span><div class="game-heading"><h2>رد دد ردمپشن</h2><span class="rating" aria-label="امتیاز ۸٫۶"><small>امتیاز</small><bdi>۸٫۶</bdi></span></div>
           <div class="original-name" lang="en" dir="ltr">Red Dead Redemption NETFLIX</div>
           <p>سفری به غرب وحشی؛ دنیایی بزرگ با داستانی فراموش‌نشدنی.</p>
-        </div></article>
+        <div class="genre-chips"><span>ماجراجویی</span><span>جهان‌باز</span></div></div></article>
 <article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="3 از 5" aria-hidden="true" data-name="sifu سیفو" data-tags="اکشن · مبارزه‌ای">
           <img src="../../assets/images/games/game-2.jpg" alt="سیفو" width="720" height="405" loading="lazy">
-          <div class="hero-content"><span class="hero-label">پیشنهاد ویژه</span><div class="game-heading"><h2>سیفو</h2><span class="rating" aria-label="امتیاز ۹٫۵"><small>امتیاز</small><bdi>۹٫۵</bdi></span></div>
+          <div class="hero-content"><span class="hero-label"><span aria-hidden="true">♛</span> پیشنهاد ویژه</span><div class="game-heading"><h2>سیفو</h2><span class="rating" aria-label="امتیاز ۹٫۵"><small>امتیاز</small><bdi>۹٫۵</bdi></span></div>
           <div class="original-name" lang="en" dir="ltr">Sifu</div>
           <p>هر مبارزه یک درس تازه است؛ مهارتت را در هنرهای رزمی به چالش بکش.</p>
-        </div></article>
+        <div class="genre-chips"><span>اکشن</span><span>مبارزه‌ای</span></div></div></article>
 <article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="4 از 5" aria-hidden="true" data-name="vampire crawlers ومپایر کراولرز" data-tags="کارتی · اکشن">
           <img src="../../assets/images/games/game-3.jpg" alt="ومپایر کراولرز" width="720" height="405" loading="lazy">
-          <div class="hero-content"><span class="hero-label">پیشنهاد ویژه</span><div class="game-heading"><h2>ومپایر کراولرز</h2><span class="rating" aria-label="امتیاز —"><small>امتیاز</small><bdi>—</bdi></span></div>
+          <div class="hero-content"><span class="hero-label"><span aria-hidden="true">♛</span> پیشنهاد ویژه</span><div class="game-heading"><h2>ومپایر کراولرز</h2><span class="rating" aria-label="امتیاز —"><small>امتیاز</small><bdi>—</bdi></span></div>
           <div class="original-name" lang="en" dir="ltr">Vampire Crawlers</div>
           <p>برای یک ماجراجویی تازه، کارت‌هایت را هوشمندانه انتخاب کن.</p>
-        </div></article>
+        <div class="genre-chips"><span>کارتی</span><span>اکشن</span></div></div></article>
 <article class="hero-slide" role="group" aria-roledescription="اسلاید" aria-label="5 از 5" aria-hidden="true" data-name="bleach mirrors high بلیچ: میرورز های" data-tags="نقش‌آفرینی">
           <img src="../../assets/images/games/game-4.jpg" alt="بلیچ: میرورز های" width="720" height="405" loading="lazy">
-          <div class="hero-content"><span class="hero-label">پیشنهاد ویژه</span><div class="game-heading"><h2>بلیچ: میرورز های</h2><span class="rating" aria-label="امتیاز ۷٫۸"><small>امتیاز</small><bdi>۷٫۸</bdi></span></div>
+          <div class="hero-content"><span class="hero-label"><span aria-hidden="true">♛</span> پیشنهاد ویژه</span><div class="game-heading"><h2>بلیچ: میرورز های</h2><span class="rating" aria-label="امتیاز ۷٫۸"><small>امتیاز</small><bdi>۷٫۸</bdi></span></div>
           <div class="original-name" lang="en" dir="ltr">BLEACH Mirrors High</div>
           <p>وارد دنیای بلیچ شو و تیم قهرمان‌های خودت را بساز.</p>
-        </div></article>
+        <div class="genre-chips"><span>نقش‌آفرینی</span></div></div></article>
           </div>
         </div>
         <button type="button" class="hero-arrow hero-prev" aria-label="بنر قبلی"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
@@ -82,12 +82,12 @@
     <section id="trending" aria-labelledby="trending-title">
       <h2 class="section-title" id="trending-title">بازی‌های محبوب این روزها</h2>
       <div class="feed">
-        <article class="feed-card" data-name="red dead redemption netflix رد دد ردمپشن" data-tags="ماجراجویی · اکشن · نقش‌آفرینی">
-          <img src="../../assets/images/games/game-5.jpg" alt="رد دد ردمپشن" width="720" height="405" loading="lazy">
-          <div class="game-heading"><h3>رد دد ردمپشن</h3><span class="rating" aria-label="امتیاز ۸٫۶"><small>امتیاز</small><bdi>۸٫۶</bdi></span></div>
-          <div class="original-name" lang="en" dir="ltr">Red Dead Redemption NETFLIX</div>
-          <div class="tags">ماجراجویی · اکشن · نقش‌آفرینی</div><p class="note">دنیای غرب وحشی، با داستانی که همراهت می‌ماند.</p>
-        </article>
+        <article class="feed-card spotlight-card" data-name="frontier legacy فرانتیر لگسی" data-tags="ماجراجویی · اکشن · نقش‌آفرینی">
+          <img src="../../assets/images/showcase/frontier-legacy.png" alt="فرانتیر لگسی" width="720" height="405" loading="lazy">
+          <div class="spotlight-copy"><div class="game-heading"><h3>فرانتیر لگسی</h3><span class="rating" aria-label="امتیاز ۹٫۱"><small>امتیاز</small><bdi>۹٫۱</bdi></span></div>
+          <div class="original-name" lang="en" dir="ltr">FRONTIER<br>LEGACY</div>
+          <div class="tags">ماجراجویی · اکشن · نقش‌آفرینی</div><p class="note">روایتی حماسی از بقا، وفاداری و انتقام در مرزهای بی‌قانونی.</p>
+        </div></article>
         <article class="feed-card" data-name="gta: san andreas – netflix جی‌تی‌ای: سن آندریاس" data-tags="اکشن · جهان‌باز · نقش‌آفرینی">
           <img src="../../assets/images/games/game-6.jpg" alt="جی‌تی‌ای: سن آندریاس" width="720" height="405" loading="lazy">
           <div class="game-heading"><h3>جی‌تی‌ای: سن آندریاس</h3><span class="rating" aria-label="امتیاز ۸٫۴"><small>امتیاز</small><bdi>۸٫۴</bdi></span></div>
@@ -138,7 +138,7 @@
   </nav>
   <dialog id="account" aria-labelledby="account-title">
     <button class="close" aria-label="بستن">×</button>
-    <div class="logo">اپ‌استور</div>
+    <div class="logo" lang="en" dir="ltr">CUTTING EDGE</div>
     <h2 id="account-title">حساب کاربری</h2>
     <p>به‌زودی می‌توانی بازی‌های دلخواهت را ذخیره کنی و دانلودهایت را مدیریت کنی.</p>
     <button class="dialog-done">باشه</button>

@@ -63,7 +63,7 @@ appearance.addEventListener('click', () => {
   const dark = document.body.classList.toggle('dark');
   appearance.setAttribute('aria-pressed', String(dark));
   appearance.textContent = dark ? 'حالت روشن' : 'حالت تاریک';
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#17191a' : '#ffffff';
+  document.querySelector('meta[name="theme-color"]').content = '#11111b';
 });
 const account = document.querySelector('#account');
 document.querySelectorAll('[data-account]').forEach(button => {
@@ -72,3 +72,9 @@ document.querySelectorAll('[data-account]').forEach(button => {
 account.querySelectorAll('.close, .dialog-done').forEach(button => {
   button.addEventListener('click', () => account.close());
 });
+
+// Highlight the selected category while keeping the section links useful.
+document.querySelectorAll('.categories a').forEach(link => link.addEventListener('click', () => {
+  document.querySelectorAll('.categories a').forEach(item => item.classList.remove('selected'));
+  link.classList.add('selected');
+}));
