@@ -169,3 +169,6 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 
 .theme-link-label { display: flex; align-items: center; gap: 6px; min-height: 44px; margin-bottom: 8px; }
 .theme-link-label input { accent-color: #111; width: 18px; height: 18px; }
+/* Green score numbers in game listings; hero scores keep their white styling. */
+.feed-card .rating bdi { color: #087d45; }
+.dark .feed-card .rating bdi { color: #56dfa0; }
