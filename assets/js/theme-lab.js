@@ -20,6 +20,7 @@
   const output = document.querySelector('#theme-opacity-value');
   const status = document.querySelector('#theme-status');
   const settings = document.querySelector('#theme-settings');
+  const linkHeader = document.querySelector('#theme-link-header');
   let state = Object.fromEntries(Object.entries(defaults).map(([key, value]) => [key, { color: value[0], opacity: value[1] }]));
   const validColor = value => /^#[0-9a-f]{6}$/i.test(value);
   try {
@@ -45,7 +46,16 @@
     opacity.value = value.opacity;
     output.value = `${value.opacity.toLocaleString('fa-IR')}٪`;
   }
+  function linkHeaderColors() {
+    if (!linkHeader.checked) return;
+    if (target.value === 'surface') state.buttons = { ...state.surface };
+    if (target.value === 'onSurface') state.buttonText = { ...state.onSurface };
+    if (target.value === 'buttons') state.surface = { ...state.buttons };
+    if (target.value === 'buttonText') state.onSurface = { ...state.buttonText };
+  }
+  linkHeader.addEventListener('change', () => { if (linkHeader.checked) { linkHeaderColors(); save(); } });
   function save() {
+    linkHeaderColors();
     apply();
     try { localStorage.setItem(storageKey, JSON.stringify(state)); }
     catch { status.textContent = 'تغییرات فعال است؛ ذخیره در این مرورگر امکان‌پذیر نیست.'; }

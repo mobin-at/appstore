@@ -166,3 +166,6 @@ dialog p { color: var(--muted); line-height: 1.9; font-size: 13px; }
 .theme-lab :focus-visible { outline: 2px solid #111; outline-offset: 3px; }
 
 .brand-logo .brand-mark { height: auto; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; }
+
+.theme-link-label { display: flex; align-items: center; gap: 6px; min-height: 44px; margin-bottom: 8px; }
+.theme-link-label input { accent-color: #111; width: 18px; height: 18px; }
