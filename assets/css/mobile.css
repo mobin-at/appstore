@@ -179,3 +179,36 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
   .category-card-tags span { font-size: 11px; line-height: 20px; padding: 3px 9px; }
   .unrated { font-size: 11px; }
 }
+/* Compact crimson-tinted card footers; the shelf flows left to right. */
+.game-rail {
+  direction: ltr;
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: #bd1b49 transparent;
+  scrollbar-width: thin;
+  cursor: grab;
+}
+.game-rail.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+.category-card {
+  direction: rtl;
+  background: radial-gradient(ellipse at top right, #75143455, transparent 78%), linear-gradient(135deg, #23202e, #14131e);
+  border-color: #d62a552b;
+}
+.category-card-media img { user-select: none; -webkit-user-drag: none; }
+.category-card-body { padding: 9px 11px 10px; border-top: 1px solid #f026502c; }
+.category-card h3 { min-height: 0; font-size: 12px; line-height: 20px; }
+.category-card .game-heading { gap: 8px; }
+.category-card .rating { margin-top: 0; gap: 0; }
+.category-card .rating small { font-size: 8px; line-height: 10px; }
+.category-card .rating bdi { font-size: 16px; line-height: 19px; }
+.category-card-description { min-height: 0; font-size: 10px; line-height: 18px; margin: 5px 0 7px; }
+.category-card-tags { gap: 4px; }
+.category-card-tags span { border-color: #e7365e33; background: #c81e4712; color: #f0dce5; font-size: 8px; line-height: 14px; padding: 1px 5px; border-radius: 5px; }
+@media (min-width: 600px) {
+  .category-card-body { padding: 11px 15px 12px; }
+  .category-card h3 { min-height: 0; font-size: 15px; line-height: 24px; }
+  .category-card-description { min-height: 0; font-size: 12px; line-height: 21px; margin: 6px 0 8px; }
+  .category-card .rating small { font-size: 9px; line-height: 12px; }
+  .category-card .rating bdi { font-size: 20px; line-height: 23px; }
+  .category-card-tags span { font-size: 9px; line-height: 16px; padding: 1px 6px; }
+}
