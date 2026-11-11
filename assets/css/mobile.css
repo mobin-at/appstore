@@ -49,3 +49,6 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
 .header { grid-template-columns: minmax(0, 1fr) auto; }
 .brand-logo { text-align: start; }
 @media (max-width: 360px) { .header { grid-template-columns: minmax(0, 1fr) auto; } }
+
+/* Align the crown optically with the Persian badge label. */
+.hero-label > span { display: inline-block; position: relative; top: 3px; line-height: 1; }
