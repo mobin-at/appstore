@@ -19,14 +19,17 @@ function normalize(value) {
 }
 function filterGames() {
   const query = normalize(input.value);
-  let count = 0;
-  document.querySelectorAll('.feed-card').forEach(card => {
+  const matches = new Set();
+  document.querySelectorAll('.category-card').forEach(card => {
     card.hidden = !normalize(`${card.dataset.name} ${card.dataset.tags}`).includes(query);
-    if (!card.hidden) count++;
+    if (!card.hidden) matches.add(card.dataset.game);
   });
-  document.querySelector('.empty').hidden = count > 0;
+  document.querySelectorAll('.game-category').forEach(section => {
+    section.hidden = !section.querySelector('.category-card:not([hidden])');
+  });
+  document.querySelector('.empty').hidden = matches.size > 0;
   document.querySelector('.search-status').textContent = query
-    ? `${count.toLocaleString('fa-IR')} بازی پیدا شد` : '';
+    ? `${matches.size.toLocaleString('fa-IR')} بازی پیدا شد` : '';
 }
 input.addEventListener('input', filterGames);
 function closeSearch() {

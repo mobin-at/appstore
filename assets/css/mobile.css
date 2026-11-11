@@ -127,3 +127,55 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
 @media (max-width: 599px) {
   .hero .rating small, .hero .rating bdi { height: 18px; line-height: 18px; }
 }
+/* Prioritized category shelves: one full card plus a half-card preview. */
+.game-category { min-width: 0; }
+.game-rail {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 16px;
+  padding: 2px 16px 15px;
+  scrollbar-width: thin;
+  scrollbar-color: #c9bdcd transparent;
+}
+.game-rail:focus-visible { outline-offset: -3px; border-radius: 12px; }
+.category-card {
+  flex: 0 0 calc((100% - 12px) / 1.5);
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #292634, #1c1b27);
+  border: 1px solid #ffffff20;
+  color: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 7px 18px #21162a16;
+}
+.category-card-media { aspect-ratio: 16 / 10; overflow: hidden; background: #1b1b26; }
+.category-card-media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.085); }
+.category-card[data-game="mozafarkhan"] .category-card-media img { transform: none; }
+.category-card-body { padding: 11px 12px 13px; }
+.category-card .game-heading { align-items: start; gap: 8px; }
+.category-card h3 { margin: 0; min-height: 42px; font-size: 12px; font-weight: 700; line-height: 21px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.category-card .rating { display: flex; flex-direction: column; align-items: center; gap: 2px; margin-top: 2px; }
+.category-card .rating small { color: #d3ccde; font-size: 8px; line-height: 12px; }
+.category-card .rating bdi { color: #5beaab; font-size: 17px; line-height: 20px; }
+.category-card .rating bdi::before { width: 15px; height: 15px; }
+.unrated { flex-shrink: 0; color: #c0b8cb; font-size: 8px; padding-top: 4px; }
+.category-card-description { margin: 7px 0 11px; color: #e2dce9; font-size: 10px; line-height: 20px; min-height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.category-card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.category-card-tags span { color: #e9e2ee; border: 1px solid #ffffff1c; border-radius: 6px; padding: 2px 5px; font-size: 8px; line-height: 15px; }
+.empty { margin: 0 18px; }
+@media (min-width: 600px) {
+  .game-rail { padding-inline: 22px; gap: 18px; scroll-padding-inline: 22px; }
+  .category-card { flex-basis: calc((100% - 18px) / 1.5); border-radius: 23px; }
+  .category-card-body { padding: 15px 18px 18px; }
+  .category-card h3 { font-size: 18px; line-height: 30px; min-height: 60px; }
+  .category-card .rating small { font-size: 10px; }
+  .category-card .rating bdi { font-size: 23px; line-height: 28px; }
+  .category-card .rating bdi::before { width: 20px; height: 20px; }
+  .category-card-description { font-size: 14px; line-height: 26px; min-height: 52px; }
+  .category-card-tags span { font-size: 11px; line-height: 20px; padding: 3px 9px; }
+  .unrated { font-size: 11px; }
+}
