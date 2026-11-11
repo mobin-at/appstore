@@ -212,3 +212,28 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
   .category-card .rating bdi { font-size: 20px; line-height: 23px; }
   .category-card-tags span { font-size: 9px; line-height: 16px; padding: 1px 6px; }
 }
+/* Reference card layout: compact maroon body with a small score opposite title. */
+.category-card { border-radius: 14px; border: 1px solid #8f717f80; background: linear-gradient(135deg, #42162a 0%, #251522 60%, #19131e 100%); box-shadow: 0 3px 10px #28162b12; }
+.category-card-media { aspect-ratio: 16 / 10; }
+.category-card-body { display: grid; gap: 7px; padding: 8px 10px 10px; border-top: 0; }
+.category-card .game-heading { align-items: flex-start; gap: 8px; }
+.category-card h3 { min-height: 0; font-size: 11px; line-height: 18px; font-weight: 700; }
+.category-card .rating { flex-direction: column; gap: 0; align-items: flex-start; margin-top: 0; min-width: 29px; }
+.category-card .rating small { color: #d7c6d0; font-size: 6px; line-height: 10px; }
+.category-card .rating bdi { gap: 3px; font-size: 12px; line-height: 15px; }
+.category-card .rating bdi::before { width: 11px; height: 11px; }
+.category-card-description { min-height: 30px; margin: 0; color: #e7dce4; font-size: 9px; line-height: 15px; }
+.category-card-tags { gap: 4px; align-items: center; }
+.category-card-tags span { border: 1px solid #bd829540; border-radius: 6px; background: #c0386020; color: #ead4df; font-size: 7px; line-height: 13px; padding: 0 5px; }
+.category-card .unrated { font-size: 7px; padding-top: 2px; }
+@media (min-width: 600px) {
+  .category-card { border-radius: 19px; }
+  .category-card-body { padding: 10px 14px 12px; gap: 9px; }
+  .category-card h3 { font-size: 14px; line-height: 23px; }
+  .category-card .rating small { font-size: 8px; line-height: 12px; }
+  .category-card .rating bdi { font-size: 16px; line-height: 20px; }
+  .category-card .rating bdi::before { width: 14px; height: 14px; }
+  .category-card-description { min-height: 38px; font-size: 11px; line-height: 19px; }
+  .category-card-tags span { font-size: 9px; line-height: 16px; padding-inline: 6px; }
+  .category-card .unrated { font-size: 9px; }
+}
