@@ -289,3 +289,14 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
   .discovery-grid .category-card-tags span { font-size: 8px; line-height: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .loading-spinner { animation: none; } }
+/* A consistent red 'more' link for every shelf and the discovery grid. */
+.category-heading, .discovery-heading { display: flex; align-items: center; gap: 10px; padding-inline-end: 16px; }
+.category-heading .section-title, .discovery-heading .section-title { flex: 1; min-width: 0; padding-inline-end: 0; }
+.category-more { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 63px; min-height: 34px; padding: 5px 12px; border-radius: 20px; background: linear-gradient(135deg, #a01343, #ed1c4d); color: #fff; font-size: 10px; white-space: nowrap; box-shadow: 0 3px 9px #c7164226; }
+.category-more span { font-family: Arial, sans-serif; font-size: 21px; line-height: 1; }
+.category-more:hover { background: #cf1345; }
+.category-page-header { display: flex; align-items: center; justify-content: space-between; padding: 22px 20px; min-height: 90px; gap: 20px; color: #fff; }
+.category-page-header > a { min-height: 44px; display: inline-flex; align-items: center; font-size: 12px; }
+.category-page-header .wordmark { font-size: 23px; }
+.category-destination { padding-bottom: 0; }
+@media (min-width: 600px) { .category-heading, .discovery-heading { padding-inline-end: 22px; } .category-more { font-size: 12px; padding-inline: 16px; min-height: 38px; } }

@@ -5,7 +5,6 @@
   const sentinel = document.querySelector('.discovery-sentinel');
   const loading = document.querySelector('.discovery-loading');
   const more = document.querySelector('.load-more-games');
-  const count = document.querySelector('.discovery-count');
   const empty = document.querySelector('.discovery-empty');
   const searchInput = document.querySelector('#game-search');
   const batchSize = 12;
@@ -31,7 +30,6 @@
     }
     grid.append(fragment);
     total += batchSize;
-    count.textContent = `${total.toLocaleString('fa-IR')} بازی بارگذاری شده`;
     filterDiscovery();
   }
   async function loadMore() {
