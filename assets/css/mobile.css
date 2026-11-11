@@ -300,3 +300,7 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
 .category-page-header .wordmark { font-size: 23px; }
 .category-destination { padding-bottom: 0; }
 @media (min-width: 600px) { .category-heading, .discovery-heading { padding-inline-end: 22px; } .category-more { font-size: 12px; padding-inline: 16px; min-height: 38px; } }
+
+/* SVG avoids bidi mirroring and font-baseline offsets in the More buttons. */
+.category-more { direction: rtl; align-items: center; line-height: 1.5; }
+.category-more svg { display: block; width: 15px; height: 15px; flex: 0 0 15px; stroke-width: 2; }
