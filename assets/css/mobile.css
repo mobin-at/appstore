@@ -118,3 +118,12 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
   .hero .rating bdi { font-size: 16px; }
   .hero .rating bdi::before { width: 16px; height: 16px; }
 }
+/* Use one shared line box for the score, icon and label. */
+.hero .rating { display: inline-flex; align-items: center; justify-content: center; }
+.hero .rating small,
+.hero .rating bdi { display: inline-flex; align-items: center; justify-content: center; height: 20px; line-height: 20px; padding: 0; margin: 0; }
+.hero .rating bdi::before { align-self: center; position: relative; top: -1px; }
+.hero .rating small { position: relative; top: 1px; }
+@media (max-width: 599px) {
+  .hero .rating small, .hero .rating bdi { height: 18px; line-height: 18px; }
+}
