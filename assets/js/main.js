@@ -1,23 +1,8 @@
-const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.menu');
 const search = document.querySelector('.search-panel');
 const input = search.querySelector('input');
 const searchButton = document.querySelector('.search-button');
 
-function closeMenu() {
-  menu.hidden = true;
-  menuButton.setAttribute('aria-expanded', 'false');
-}
-menuButton.addEventListener('click', () => {
-  menu.hidden = !menu.hidden;
-  menuButton.setAttribute('aria-expanded', String(!menu.hidden));
-});
-menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-document.addEventListener('click', event => {
-  if (!menu.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
-});
 function openSearch() {
-  closeMenu();
   search.hidden = false;
   searchButton.setAttribute('aria-expanded', 'true');
   search.scrollIntoView({ block: 'center' });
@@ -54,16 +39,8 @@ function closeSearch() {
 document.querySelector('.cancel-search').addEventListener('click', closeSearch);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
-    closeMenu();
-    if (!search.hidden) closeSearch();
+      if (!search.hidden) closeSearch();
   }
-});
-const appearance = document.querySelector('#appearance');
-appearance.addEventListener('click', () => {
-  const dark = document.body.classList.toggle('dark');
-  appearance.setAttribute('aria-pressed', String(dark));
-  appearance.textContent = dark ? 'حالت روشن' : 'حالت تاریک';
-  document.querySelector('meta[name="theme-color"]').content = '#11111b';
 });
 const account = document.querySelector('#account');
 document.querySelectorAll('[data-account]').forEach(button => {
