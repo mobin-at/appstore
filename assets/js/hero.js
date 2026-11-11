@@ -30,14 +30,14 @@ function updatePlayback() {
   autoplay.querySelector('span').textContent = paused ? '▷' : 'Ⅱ';
   schedule();
 }
-hero.querySelector('.hero-next').addEventListener('click', () => showSlide(current + 1));
-hero.querySelector('.hero-prev').addEventListener('click', () => showSlide(current - 1));
+hero.querySelector('.hero-next').addEventListener('click', () => showSlide(current - 1));
+hero.querySelector('.hero-prev').addEventListener('click', () => showSlide(current + 1));
 dots.forEach((dot, i) => dot.addEventListener('click', () => showSlide(i)));
 autoplay.addEventListener('click', () => { paused = !paused; updatePlayback(); });
 hero.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
     event.preventDefault();
-    showSlide(current + (event.key === 'ArrowLeft' ? 1 : -1));
+    showSlide(current + (event.key === 'ArrowRight' ? 1 : -1));
   }
 });
 hero.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
