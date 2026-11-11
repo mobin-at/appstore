@@ -69,3 +69,32 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
 
 /* Keep every game banner centered after reducing hero height by 20px. */
 .hero-slide > img { object-position: center center; }
+/* Fit the hero to the actual artwork, excluding the source PNG's clear border. */
+.hero { border: 0; }
+.hero-slide { height: auto; aspect-ratio: 1900 / 1165; }
+.hero-slide > img { object-fit: cover; object-position: center; }
+.hero-bashgah > img,
+.hero-sharifabad > img,
+.hero-amirza > img,
+.hero-dabernashow > img { transform: scale(1.085); }
+@media (max-width: 599px) {
+  .hero-content { inset-inline: 14px; bottom: 31px; }
+  .hero-label { padding: 2px 7px; margin-bottom: 3px; font-size: 9px; }
+  .hero-label span { font-size: 15px; }
+  .hero .game-heading { gap: 7px; }
+  .hero .game-heading h2 { font-size: 17px; line-height: 1.6; }
+  .hero .rating { padding: 4px 6px; border-radius: 8px; }
+  .hero .rating bdi { font-size: 17px; }
+  .hero .rating bdi::before { font-size: 15px; }
+  .hero-content p { font-size: 10px; line-height: 1.7; margin: 4px 0 6px; }
+  .genre-chips { gap: 5px; }
+  .genre-chips span { padding: 2px 8px; font-size: 9px; border-radius: 7px; }
+  .hero-arrow { top: 25%; }
+  .hero-slide::after { background: linear-gradient(180deg, #080a1400 10%, #10101d44 28%, #11101edb 65%, #0c0d19fa 100%); }
+}
+@media (max-width: 360px) {
+  .hero-slide { height: auto; }
+  .hero .game-heading h2 { font-size: 14px; }
+  .hero-content { inset-inline: 12px; bottom: 29px; }
+  .hero-content p { font-size: 9px; }
+}
