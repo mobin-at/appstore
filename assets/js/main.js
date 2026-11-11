@@ -49,9 +49,3 @@ document.querySelectorAll('[data-account]').forEach(button => {
 account.querySelectorAll('.close, .dialog-done').forEach(button => {
   button.addEventListener('click', () => account.close());
 });
-
-// Highlight the selected category while keeping the section links useful.
-document.querySelectorAll('.categories a').forEach(link => link.addEventListener('click', () => {
-  document.querySelectorAll('.categories a').forEach(item => item.classList.remove('selected'));
-  link.classList.add('selected');
-}));
