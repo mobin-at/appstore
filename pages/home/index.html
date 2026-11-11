@@ -165,6 +165,17 @@
     </section>
     <p class="empty" role="status" hidden>بازی‌ای پیدا نشد. نام دیگری را امتحان کن.</p>
     <p class="sr-only search-status" role="status" aria-live="polite"></p>
+    <section class="discovery" id="discovery" aria-labelledby="discovery-title">
+      <div class="discovery-heading"><h2 class="section-title" id="discovery-title">کشف و بازی‌های بیشتر</h2><span class="discovery-count" aria-live="polite"></span></div>
+      <p class="discovery-intro">بازی بعدی‌ات را پیدا کن؛ برای دیدن بازی‌های بیشتر پایین برو.</p>
+      <div class="discovery-grid" aria-busy="false"></div>
+      <p class="discovery-empty" hidden>بازی‌ای با این نام پیدا نشد.</p>
+      <div class="discovery-sentinel">
+        <div class="discovery-loading" role="status" hidden><span class="loading-spinner" aria-hidden="true"></span><span>داریم بازی‌های بیشتری می‌آوریم…</span></div>
+        <button type="button" class="load-more-games">نمایش بازی‌های بیشتر <span aria-hidden="true">↓</span></button>
+        <p class="discovery-demo-note">پیش‌نمایش اسکرول بی‌نهایت · بازی‌ها برای تست طراحی تکرار می‌شوند</p>
+      </div>
+    </section>
     <footer>بازی بعدی‌ات را اینجا پیدا کن.<br><span>اپ‌استور · بازی‌ها و برنامه‌های اندروید</span></footer>
   </main>
   <nav class="bottom-nav" aria-label="ناوبری اصلی">
@@ -183,5 +194,6 @@
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/hero.js"></script>
   <script src="../../assets/js/category-rails.js"></script>
+  <script src="../../assets/js/discovery.js"></script>
 </body>
 </html>

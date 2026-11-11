@@ -249,3 +249,43 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
   .category-card-description { min-height: 0; font-size: 10px; line-height: 17px; }
   .category-card-tags span { font-size: 8px; line-height: 14px; }
 }
+/* An endlessly growing discovery grid below the horizontal category shelves. */
+.discovery { padding-bottom: 10px; }
+.discovery-heading { display: flex; align-items: center; gap: 8px; padding-inline-end: 16px; }
+.discovery-heading .section-title { flex: 1; font-size: clamp(17px, 3.8vw, 29px); padding-inline-end: 0; }
+.discovery-count { color: #8c3453; font-size: 9px; white-space: nowrap; }
+.discovery-intro { margin: -7px 20px 14px; color: #726679; font-size: 10px; line-height: 1.9; }
+.discovery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 10px; padding-inline: 16px; }
+.discovery-grid .category-card { width: 100%; }
+.discovery-grid .category-card-media { aspect-ratio: 1.5; }
+.discovery-grid .category-card-body { padding: 7px 8px 8px; gap: 4px; }
+.discovery-grid .game-heading { gap: 4px; }
+.discovery-grid h3 { font-size: 10px; line-height: 17px; }
+.discovery-grid .rating small { display: none; }
+.discovery-grid .rating bdi { font-size: 12px; line-height: 17px; gap: 2px; }
+.discovery-grid .rating bdi::before { width: 11px; height: 11px; }
+.discovery-grid .category-card-description { font-size: 9px; line-height: 15px; }
+.discovery-grid .category-card-tags { gap: 3px; }
+.discovery-grid .category-card-tags span { font-size: 7px; line-height: 12px; padding-inline: 4px; }
+.discovery-grid .unrated { font-size: 7px; }
+.discovery-sentinel { padding: 25px 16px 10px; text-align: center; min-height: 125px; }
+.discovery-loading { display: flex; justify-content: center; align-items: center; gap: 9px; color: #aa1643; font-size: 12px; min-height: 40px; margin-bottom: 8px; }
+.loading-spinner { width: 19px; height: 19px; border: 2px solid #dd1c4933; border-top-color: #df174c; border-radius: 50%; animation: discovery-spin .8s linear infinite; }
+.load-more-games { display: inline-flex; gap: 10px; justify-content: center; align-items: center; min-height: 42px; padding: 8px 20px; border: 1px solid #d41a4c40; border-radius: 22px; background: linear-gradient(135deg, #95133f, #e91b4d); color: #fff; font-size: 11px; }
+.load-more-games:disabled { opacity: .5; cursor: wait; }
+.discovery-demo-note { color: #766a7d; font-size: 9px; line-height: 20px; margin: 9px 0 0; }
+.discovery-empty { text-align: center; color: #746779; font-size: 12px; padding: 20px; }
+.dark .discovery-count, .dark .discovery-intro, .dark .discovery-demo-note, .dark .discovery-empty { color: #d5becd; }
+@keyframes discovery-spin { to { transform: rotate(360deg); } }
+@media (min-width: 480px) { .discovery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 600px) {
+  .discovery-heading { padding-inline-end: 22px; }
+  .discovery-count { font-size: 11px; }
+  .discovery-intro { margin-inline: 24px; font-size: 12px; }
+  .discovery-grid { padding-inline: 22px; gap: 14px; }
+  .discovery-grid h3 { font-size: 12px; line-height: 20px; }
+  .discovery-grid .category-card-description { font-size: 10px; line-height: 17px; }
+  .discovery-grid .rating bdi { font-size: 14px; }
+  .discovery-grid .category-card-tags span { font-size: 8px; line-height: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .loading-spinner { animation: none; } }
