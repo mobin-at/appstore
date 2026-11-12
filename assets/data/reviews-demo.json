@@ -1,164 +1,164 @@
 [
   {
     "id": "demo-0",
-    "name": "کاربر نمونه",
+    "name": "آوا",
     "rating": 5,
     "text": "بازی خیلی جذابیه، مخصوصاً بخش رقابت آنلاین. با دوستام حسابی سرگرم شدیم!",
     "date": "2026-11-11T10:00:00Z",
     "likes": 12,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-00.webp"
   },
   {
     "id": "demo-1",
-    "name": "بازیکن نمونه",
+    "name": "کیان‌پلیر",
     "rating": 4,
     "text": "گرافیک خوب و تجربهٔ بازی لذت‌بخشی داره. چت صوتی هم خیلی به بازی کمک کرده.",
     "date": "2026-11-10T10:00:00Z",
     "likes": 8,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-01.webp"
   },
   {
     "id": "demo-2",
-    "name": "منچ‌باز",
+    "name": "ربات‌باز",
     "rating": 5,
     "text": "همون حس خوب دورهمی‌های قدیم! تنوع تاس و مهره‌ها رو دوست داشتم.",
     "date": "2026-11-09T10:00:00Z",
     "likes": 19,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-02.webp"
   },
   {
     "id": "demo-3",
-    "name": "بازیکن آبی",
+    "name": "نیکا",
     "rating": 3,
     "text": "بازی سرگرم‌کننده‌ایه. امیدوارم سرعت پیدا کردن هم‌بازی بهتر بشه.",
     "date": "2026-11-08T10:00:00Z",
     "likes": 4,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-03.webp"
   },
   {
     "id": "demo-4",
-    "name": "دوست بازی",
+    "name": "روباه سبز",
     "rating": 4,
     "text": "برای یک بازی کوتاه با دوستام خیلی خوبه.",
     "date": "2026-11-07T10:00:00Z",
     "likes": 7,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-04.webp"
   },
   {
     "id": "demo-5",
-    "name": "هم‌تیمی",
+    "name": "آرین",
     "rating": 5,
     "text": "بازی گروهیش عالیه؛ پیشنهاد می‌کنم امتحانش کنید.",
     "date": "2026-11-06T10:00:00Z",
     "likes": 16,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-05.webp"
   },
   {
     "id": "demo-6",
-    "name": "کاربر نمونه",
+    "name": "اورک مهربون",
     "rating": 5,
     "text": "بازی خیلی جذابیه، مخصوصاً بخش رقابت آنلاین. با دوستام حسابی سرگرم شدیم!",
     "date": "2026-11-05T10:00:00Z",
     "likes": 12,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-06.webp"
   },
   {
     "id": "demo-7",
-    "name": "بازیکن نمونه",
+    "name": "مهتاب",
     "rating": 4,
     "text": "گرافیک خوب و تجربهٔ بازی لذت‌بخشی داره. چت صوتی هم خیلی به بازی کمک کرده.",
     "date": "2026-11-04T10:00:00Z",
     "likes": 8,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-07.webp"
   },
   {
     "id": "demo-8",
-    "name": "منچ‌باز",
+    "name": "گربهٔ جادوگر",
     "rating": 5,
     "text": "همون حس خوب دورهمی‌های قدیم! تنوع تاس و مهره‌ها رو دوست داشتم.",
     "date": "2026-11-03T10:00:00Z",
     "likes": 19,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-08.webp"
   },
   {
     "id": "demo-9",
-    "name": "بازیکن آبی",
+    "name": "مانی‌گیم",
     "rating": 3,
     "text": "بازی سرگرم‌کننده‌ایه. امیدوارم سرعت پیدا کردن هم‌بازی بهتر بشه.",
     "date": "2026-11-11T10:00:00Z",
     "likes": 4,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-09.webp"
   },
   {
     "id": "demo-10",
-    "name": "دوست بازی",
+    "name": "رها",
     "rating": 4,
     "text": "برای یک بازی کوتاه با دوستام خیلی خوبه.",
     "date": "2026-11-10T10:00:00Z",
     "likes": 7,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-10.webp"
   },
   {
     "id": "demo-11",
-    "name": "هم‌تیمی",
+    "name": "دورف طلایی",
     "rating": 5,
     "text": "بازی گروهیش عالیه؛ پیشنهاد می‌کنم امتحانش کنید.",
     "date": "2026-11-09T10:00:00Z",
     "likes": 16,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-11.webp"
   },
   {
     "id": "demo-12",
-    "name": "کاربر نمونه",
+    "name": "اژدهای یخی",
     "rating": 5,
     "text": "بازی خیلی جذابیه، مخصوصاً بخش رقابت آنلاین. با دوستام حسابی سرگرم شدیم!",
     "date": "2026-11-08T10:00:00Z",
     "likes": 12,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-12.webp"
   },
   {
     "id": "demo-13",
-    "name": "بازیکن نمونه",
+    "name": "آوا",
     "rating": 4,
     "text": "گرافیک خوب و تجربهٔ بازی لذت‌بخشی داره. چت صوتی هم خیلی به بازی کمک کرده.",
     "date": "2026-11-07T10:00:00Z",
     "likes": 8,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-13.webp"
   },
   {
     "id": "demo-14",
-    "name": "منچ‌باز",
+    "name": "سامورایی",
     "rating": 5,
     "text": "همون حس خوب دورهمی‌های قدیم! تنوع تاس و مهره‌ها رو دوست داشتم.",
     "date": "2026-11-06T10:00:00Z",
     "likes": 19,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-14.webp"
   },
   {
     "id": "demo-15",
-    "name": "بازیکن آبی",
+    "name": "الف بنفش",
     "rating": 3,
     "text": "بازی سرگرم‌کننده‌ایه. امیدوارم سرعت پیدا کردن هم‌بازی بهتر بشه.",
     "date": "2026-11-05T10:00:00Z",
     "likes": 4,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-15.webp"
   },
   {
     "id": "demo-16",
-    "name": "دوست بازی",
+    "name": "راکون‌پلیر",
     "rating": 4,
     "text": "برای یک بازی کوتاه با دوستام خیلی خوبه.",
     "date": "2026-11-04T10:00:00Z",
     "likes": 7,
-    "avatar": "hooded-player.png"
+    "avatar": "gamers/player-16.webp"
   },
   {
     "id": "demo-17",
-    "name": "هم‌تیمی",
+    "name": "کاپیتان نوا",
     "rating": 5,
     "text": "بازی گروهیش عالیه؛ پیشنهاد می‌کنم امتحانش کنید.",
     "date": "2026-11-03T10:00:00Z",
     "likes": 16,
-    "avatar": "arthur-morgan.png"
+    "avatar": "gamers/player-17.webp"
   }
 ]

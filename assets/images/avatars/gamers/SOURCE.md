@@ -1,0 +1,1 @@
+18 original AI-generated gaming portraits created for the CUTTING EDGE review prototype on 2026-11-12. Exported as individual 256×256 WebP assets from a 6×3 generated portrait sheet. The original generated sheet is retained outside the website.
