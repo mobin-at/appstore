@@ -304,3 +304,4 @@ main{position:relative;background:radial-gradient(ellipse at top right,#dfdbed77
 /* SVG avoids bidi mirroring and font-baseline offsets in the More buttons. */
 .category-more { direction: rtl; align-items: center; line-height: 1.5; }
 .category-more svg { display: block; width: 15px; height: 15px; flex: 0 0 15px; stroke-width: 2; }
+.game-detail-link{display:block}.game-detail-link:focus-visible{outline:2px solid #ff2b61;outline-offset:3px;border-radius:4px}

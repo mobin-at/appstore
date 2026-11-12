@@ -49,7 +49,7 @@ viewport.addEventListener('pointerdown', event => {
   if (!event.isPrimary || (event.pointerType === 'mouse' && event.button !== 0)) return;
   pointerStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
   clearTimeout(timer);
-  viewport.setPointerCapture(event.pointerId);
+  if (!event.target.closest('a,button')) viewport.setPointerCapture(event.pointerId);
 });
 viewport.addEventListener('pointerup', event => {
   if (!pointerStart || pointerStart.id !== event.pointerId) return;

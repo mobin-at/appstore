@@ -1,0 +1,3 @@
+const gameHref=new URL('../../pages/game/',document.currentScript.src).href;
+function attachGameLinks(){document.querySelectorAll('[data-game="bashgah-mench"],.hero-bashgah').forEach(card=>{if(card.dataset.linkReady)return;card.dataset.linkReady='true';const link=document.createElement('a');link.href=gameHref;link.className='game-detail-link';link.setAttribute('aria-label','معرفی باشگاه منچ');const heading=card.querySelector('h2,h3');if(heading){while(heading.firstChild)link.append(heading.firstChild);heading.append(link)}})}attachGameLinks();new MutationObserver(attachGameLinks).observe(document.querySelector('main'),{childList:true,subtree:true});
+if(new URLSearchParams(location.search).has('search'))document.querySelector('.search-button')?.click();
