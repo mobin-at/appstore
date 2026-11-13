@@ -1,0 +1,67 @@
+[
+  {
+    "id": "bashgah-mench",
+    "name": "باشگاه منچ",
+    "description": "یک رقابت سر تا سر هیجان با چت صوتی",
+    "rating": 9.8,
+    "tags": [
+      "تفننی",
+      "آنلاین"
+    ],
+    "network": "online",
+    "image": "bashgah-mench/hero.png",
+    "priority": 0
+  },
+  {
+    "id": "sharifabad",
+    "name": "شریف آباد",
+    "description": "مزرعه رویاهات رو بساز!",
+    "rating": 8.2,
+    "tags": [
+      "مزرعه‌داری",
+      "شبیه‌سازی"
+    ],
+    "network": "online",
+    "image": "sharifabad/hero.png",
+    "priority": 1
+  },
+  {
+    "id": "amirza",
+    "name": "آمیرزا",
+    "description": "به دنیای سرشار از کلمات خوش آمدید!",
+    "rating": null,
+    "tags": [
+      "تفننی",
+      "جورچین"
+    ],
+    "network": "offline",
+    "image": "amirza/hero.png",
+    "priority": 2
+  },
+  {
+    "id": "mozafarkhan",
+    "name": "مظفرخان",
+    "description": "عمارت قدیمی را دوباره سبز و آباد کن",
+    "rating": 10,
+    "tags": [
+      "تفننی",
+      "جورچین"
+    ],
+    "network": null,
+    "image": "mozafarkhan/hero.jpg",
+    "priority": 3
+  },
+  {
+    "id": "dabernashow",
+    "name": "دبرناشو",
+    "description": "دبرنا به یاد قدیما!",
+    "rating": 2.1,
+    "tags": [
+      "تفننی",
+      "آنلاین"
+    ],
+    "network": "online",
+    "image": "dabernashow/hero.png",
+    "priority": 4
+  }
+]
