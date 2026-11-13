@@ -3,7 +3,7 @@
 - Introduction: `pages/game/index.html?tab=intro`
 - Reviews: `pages/game/index.html?tab=reviews`
 - Both tabs share one header, banner, identity, install/actions block and bottom navigation. Changing tabs only toggles their content panels.
-- Real app metadata is recorded separately in `assets/data/bashgah-mench.json`. Icon and seven screenshots were downloaded from the linked Bazaar page on 2026-11-12. The banner and user avatars reuse the existing project assets. Bazaar's retrieved app icon differs from the reference illustration; the actual sourced icon is used.
+- Real app metadata is recorded separately in `assets/data/bashgah-mench.json`. Icon and seven screenshots were downloaded from the linked Bazaar page on 2026-11-12. The video cover is the original user-supplied 2172×724 PNG, shared by both introduction/reviews and the video poster. Review avatars are 18 distinct generated portraits. Bazaar's retrieved app icon differs from the reference illustration; the actual sourced icon is used.
 - Ratings shown for the game are Bazaar's 4.4/5 and 2,827 votes, separate from the older 10-point home-card design scores. No age classification was returned by the source, so none is invented.
 - `assets/data/reviews-demo.json` contains explicitly labelled demonstration reviews. Rating-distribution percentages are also labelled as sample data. They are not presented as scraped reviews.
 - The browser stores one review per local visitor, edits that same record, persists helpful votes without multiple likes per review, and saves favorites in localStorage. This is a functional browser prototype, not authenticated or shared server storage. Clearing storage or using a different browser creates a different local visitor.
