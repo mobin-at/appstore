@@ -9,7 +9,7 @@ function openSearch() {
   input.focus({ preventScroll: true });
 }
 searchButton.addEventListener('click', () => search.hidden ? openSearch() : closeSearch());
-document.querySelector('.nav-search').addEventListener('click', openSearch);
+document.querySelector('.nav-search')?.addEventListener('click', openSearch);
 search.addEventListener('submit', event => event.preventDefault());
 
 // Match Persian and Arabic letter variants, spaces, and English titles.
