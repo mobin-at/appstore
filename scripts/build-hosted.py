@@ -22,7 +22,7 @@ for folder in ['pages', 'assets']:
             assets['/' + path.relative_to(root).as_posix()] = [mime, base64.b64encode(path.read_bytes()).decode()]
 # Give every published asset a release-specific path to avoid stale browser files.
 release = '/releases/appstore-v46'
-home = (root / 'pages/home/index.html').read_text().replace('../../assets/', release + '/assets/').replace('../category/', '/pages/category/').replace('../game/', '/pages/game/')
+home = (root / 'pages/home/index.html').read_text().replace('../../assets/', release + '/assets/').replace('../category/', '/pages/category/').replace('../game/', '/pages/game/').replace('../home/', '/pages/home/')
 assets[release + '/index.html'] = ['text/html; charset=utf-8', base64.b64encode(home.encode()).decode()]
 assets['/pages/home/index.html'] = ['text/html; charset=utf-8', base64.b64encode(home.encode()).decode()]
 assets['/index.html'] = ['text/html; charset=utf-8', base64.b64encode(home.encode()).decode()]
